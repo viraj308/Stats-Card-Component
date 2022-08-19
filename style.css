@@ -1,0 +1,98 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --veryDark-blue: hsl(233, 47%, 7%);
+    --darkDesaturated-blue: hsl(244, 38%, 16%);
+    --soft-voilet: hsl(277, 64%, 61%);
+    --white:  hsl(0, 0%, 100%);
+    --white-mainP: hsla(0, 0%, 100%, 0.75);
+    --white-statH: hsla(0, 0%, 100%, 0.6);
+    font-size: 62.5%;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background-color: var(--veryDark-blue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.container {
+    background-color: var(--darkDesaturated-blue);
+    width: 325px;
+    min-width: 325px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.images {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--soft-voilet);
+    opacity: 0.5;
+}
+
+.content {
+    font-family: 'Inter';
+    color: var(--white);
+    padding: 2em;
+}
+
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+
+}
+
+.text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1em;
+    color: var(--white-mainP);
+    line-height: 2.5rem;
+}
+
+.footer {
+    font-family: 'Lexend Deca'; 
+    color: var(--white-statH);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.value {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--white);
+
+}
+.footer p {
+    line-height: 2.5rem;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.highlight {
+    color: var(--soft-voilet);
+}
+
