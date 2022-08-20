@@ -57,6 +57,7 @@ body {
     font-family: 'Inter';
     color: var(--white);
     padding: 2em;
+    margin: 0.5em 0;
 }
 
 h1 {
@@ -64,7 +65,9 @@ h1 {
     text-align: center;
 
 }
-
+.desktop {
+    display: none;
+}
 .text {
     font-size: 1.5rem;
     text-align: center;
@@ -95,4 +98,42 @@ h1 {
 .highlight {
     color: var(--soft-voilet);
 }
-
+@media (min-width: 1000px) {
+    .container {
+        width: 1110px;
+        flex-direction: row-reverse;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+        height: 100%;
+    }
+    .container2{
+        width: 555px;
+        padding: 4em;
+    }
+    h1 {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+    .text {
+        text-align: left;
+        width: 350px;
+        margin-top: 2em;
+    }
+    .content {
+        padding: 0;
+        margin: 0;
+    }
+    .footer {
+        display: flex;
+        margin-top: 5em;
+        width: 350px;
+        justify-content: space-between;
+    }
+    .footer p {
+        margin: 0;
+        text-align: left;
+    }
