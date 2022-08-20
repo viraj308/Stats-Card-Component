@@ -19,6 +19,7 @@
 img {
     display: block;
     width: 100%;
+    mix-blend-mode: multiply;
 }
 
 body {
@@ -42,8 +43,9 @@ body {
 
 .images {
     position: relative;
+    background-color: var(--soft-voilet);
 }
-.overlay {
+/* .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -51,7 +53,7 @@ body {
     right: 0;
     background-color: var(--soft-voilet);
     opacity: 0.5;
-}
+} */
 
 .content {
     font-family: 'Inter';
