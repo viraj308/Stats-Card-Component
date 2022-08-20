@@ -101,7 +101,7 @@ h1 {
 .highlight {
     color: var(--soft-voilet);
 }
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
     .container {
         width: 1100px;
         min-width: 1100px;
